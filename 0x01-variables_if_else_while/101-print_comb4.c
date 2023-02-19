@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
  * main - prints single digit numbers
- *
  * Description: prints single digit numbers with commas
  * Return: always return 0
  */
@@ -29,6 +28,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
