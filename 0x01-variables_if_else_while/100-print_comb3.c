@@ -3,33 +3,28 @@
  * main - main block
  * Description: function that prints combination of the
  * two digits 0 and 1
- * Return: 0
+ * Return: always return 0
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int i;
+	int j;
 
-	while (d < 10)
+	for (i = 10; i <= 19; i++)
 	{
-		c = 0;
-		while (c < 10)
+		for (j = 10; j <= 19; j++)
 		{
-			if (d != c && d < c)
+			if ((j % 10) > (i % 10))
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
+				putchar((i % 10) + '0');
+				putchar((j % 10) + '0');
+				if (i != 18 || j != 19)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-
-			c++;
 		}
-		c++;
 	}
 	putchar('\n');
 	return (0);
