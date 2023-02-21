@@ -2,18 +2,19 @@
 #include "main.h"
 
 /**
- * main - a program that prints alphabet
+ * print_alphabet - a program that prints alphabet
  * in lower case
  *
  * Return: 0 (success)
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
-	char alpha;
+	char x;
 
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		_putchar('alpha');
+		_putchar(x);
 	}
-	_putchar('n\');
+	_putchar('\n');
+
 }
